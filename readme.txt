@@ -1,4 +1,4 @@
-=== Plugin Name ===
+﻿=== WindStyle MultiSite Nav Bar ===
 Contributors: xiaoshatian
 Donate link: 
 Tags: MultiSite, Navigation, bar
@@ -6,7 +6,7 @@ Requires at least: 1.0.0
 Tested up to: 3.0.1
 Stable tag: trunk,
 
-如果站点启用了MultiSite，MultiSite Nav Bar可以在该站点的所有博客中显示一个导航栏，用以显示该站点的名称、Logo以及所有博客的链接。
+在启用了MultiSite的站点所有博客中显示导航栏。
 
 == Description ==
 
@@ -22,15 +22,6 @@ MultiSite Nav Bar需要在每个博客单独激活并配置，激活之后，它
 2. 在“插件”栏目中激活WindStyle MultiSite Nav Bar（每个博客都需要单独配置）。
 3. 在“MultiSite Nav Bar”栏目中配置插件。
 4. Enjoy！
-
-e.g.
-
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
-
-== Frequently Asked Questions ==
-
 
 == Screenshots ==
 
