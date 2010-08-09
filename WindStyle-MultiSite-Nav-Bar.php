@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: WindStyle MultiSite Nav Bar
-Plugin URI: http://windstyle.cn/
+Plugin URI: http://coding.windstyle.cn/apps/windstyle-multisite-nav-bar-for-wordpress/
 Description: MultiSite navigation bar for Wordpress 3.0+.
 Author: Windie Chai
-Version: 1.1.0
+Version: 1.2.0
 Author URI: http://windstyle.cn
 */
 
@@ -18,12 +18,18 @@ add_action('wp_head', 'WS_RenderBar');
 
 $option = get_option($optionName);
 
+$plugin_dir = basename(dirname(__FILE__));
+$plugin_domain = 'navbar';
+load_plugin_textdomain($plugin_domain, false, $plugin_dir . '/languages');
+
 function WS_AddOption() {
-  add_options_page('WindStyle MultiSite Nav Bar Option', 'MultiSite Nav Bar', 'administrator', basename(__FILE__), 'WS_ShowOptions');
+  global $plugin_domain;
+  add_options_page('WindStyle MultiSite Nav Bar Option', __('MultiSite Nav Bar', $plugin_domain), 'administrator', basename(__FILE__), 'WS_ShowOptions');
 }
 
 function WS_ShowOptions() {
-  global $_POST, $optionName, $option;
+  global $_POST, $optionName, $option, $plugin_domain;
+
   if (isset($_POST['WS_Style']))
   {
     $option['LogoUrl'] = $_POST['WS_LogoUrl'];
@@ -31,17 +37,17 @@ function WS_ShowOptions() {
     $option['Style'] = $_POST['WS_Style'];
     update_option($optionName, $option);
   }
-  echo '<h2>顶部导航栏 选项</h2>';
+  echo '<h2>' . __('WindStyle', $plugin_domain) . ' ' . __('MultiSite Nav Bar', $plugin_domain) . '</h2>';
   echo '<form action="" method="post">';
-  echo '<p>Logo地址：<br/><input name="WS_LogoUrl" type="text" size="50" value="'.$option['LogoUrl'].'"/></p>';
-  echo '<p>导航内容宽度：<br/><input name="WS_Width" type="text" size="25" value="'.$option['Width'].'"/>px</p>';
-  //echo '<p>链接分类目录：<br/>';
+  echo '<p>' . __('Site Logo Url:', $plugin_domain) . '<br/><input name="WS_LogoUrl" type="text" size="50" value="'.$option['LogoUrl'].'"/></p>';
+  echo '<p>' . __('Nav Bar Width:', $plugin_domain) . '<br/><input name="WS_Width" type="text" size="25" value="'.$option['Width'].'"/>px</p>';
+  //echo '<p>' . __('Links Category:', $plugin_domain) . '<br/>';
   //WS_RenderBookmarkCategories();
   //echo '</p>';
-  echo '<p>样式：<br/>';
+  echo '<p>' . __('Themes:', $plugin_domain) . '<br/>';
   WS_RenderStyleList();
   echo '</p>';
-  echo '<p><input type="submit" name="submit" value="保存"/></p>';
+  echo '<p><input type="submit" name="submit" value="' . __('Save', $plugin_domain) . '"/></p>';
   echo '</form>';
 }
 
@@ -130,8 +136,8 @@ function WS_RenderBar()
 
 function WS_WriteCSS()
 {
-  global $option;
-  echo '<link rel="stylesheet" href="'.WP_PLUGIN_URL.'/'.str_replace(basename( __FILE__),'',plugin_basename(__FILE__)).'Themes/'.$option['Style'].'" type="text/css" />';
+  global $option, $plugin_dir;
+  echo '<link rel="stylesheet" href="' . WP_PLUGIN_URL . '/' . str_replace(basename( __FILE__), '', $plugin_dir) . '/Themes/' . $option['Style'] . '" type="text/css" />';
   echo '<style type="text/css">
     #WS_TNB div{
       width:' . $option['Width'] . 'px
