@@ -2,7 +2,7 @@
 Contributors: xiaoshatian
 Donate link: 
 Tags: MultiSite, Navigation, bar
-Requires at least: 1.0.0
+Requires at least: 3.0.0
 Tested up to: 3.0.1
 Stable tag: trunk,
 
