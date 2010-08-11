@@ -1,0 +1,65 @@
+#WS_TNB
+{
+	overflow: hidden;
+	font-family:'Microsoft Yahei';
+	margin:0px;
+	text-align:center;
+	border-top:solid 5px #727578;
+}
+
+#WS_TNB div
+{
+	background-color: #727578;
+	margin-left:auto;
+	margin-right:auto;
+	line-height: 50px;
+	height:50px;
+}
+
+#WS_TNB h1
+{
+	padding: 5px 10px 5px 10px;
+	font-size: 20px;
+	float: left;
+}
+
+#WS_TNB a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+#WS_TNB h1 a:hover
+{
+	background-color: transparent
+}
+
+#WS_TNB img
+{
+	border: none;
+	vertical-align:middle
+}
+
+#WS_TNB ul
+{
+	margin: 0px;
+	padding: 0px;
+	float:left;
+}
+
+#WS_TNB li
+{
+	font-size: 12px;
+	list-style-type: none;
+	float: left
+}
+
+#WS_TNB li a
+{
+	padding: 10px 10px 10px 10px;
+}
+
+#WS_TNB li a:hover
+{
+	background-color: #656C72;
+}

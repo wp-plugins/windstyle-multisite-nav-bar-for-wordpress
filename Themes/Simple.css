@@ -1,0 +1,56 @@
+#WS_TNB
+{
+	overflow: hidden;
+	padding: 5px;
+	font-family:'Microsoft Yahei';
+	margin:0px;
+	text-align:center;
+}
+
+#WS_TNB div
+{
+	margin-left:auto;
+	margin-right:auto;
+	border-bottom:dotted 1px #ccc;
+	width:960px;
+	line-height: 50px;
+	height: 50px;
+}
+
+#WS_TNB h1
+{
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+	float: left;
+	line-height: 40px;
+}
+
+#WS_TNB a
+{
+	padding: 5px 10px 5px 10px;
+}
+
+#WS_TNB h1 a:hover
+{
+	background-color: transparent;
+}
+
+#WS_TNB img
+{
+	border: none;
+	vertical-align:middle
+}
+
+#WS_TNB ul
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#WS_TNB li
+{
+	font-size: 12px;
+	list-style-type: none;
+	float: left;
+}
