@@ -4,7 +4,7 @@ Plugin Name: WindStyle MultiSite Nav Bar
 Plugin URI: http://coding.windstyle.cn/apps/windstyle-multisite-nav-bar-for-wordpress/
 Description: MultiSite navigation bar for Wordpress 3.0+. 针对Wordpress 3.0+的多站点导航栏插件。
 Author: Windie Chai
-Version: 1.3.0
+Version: 1.4.0
 Author URI: http://windstyle.cn
 */
 
@@ -23,7 +23,7 @@ else {
 
 
 $site_option_name = 'windstyle_multisite_nav_bar_site_option';
-$site_option_default = array( 'logo_url' => '' );
+$site_option_default = array( 'logo_url' => '' , 'link_category' => '' );
 $site_option = get_site_option( $site_option_name , $site_option_default );
 
 $blog_option_name = 'windstyle_multisite_nav_bar_blog_option';

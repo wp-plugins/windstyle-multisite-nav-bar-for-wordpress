@@ -54,3 +54,8 @@
 	list-style-type: none;
 	float: left;
 }
+
+#WS_TNB .current_menu
+{
+	background-color: #ffc;
+}

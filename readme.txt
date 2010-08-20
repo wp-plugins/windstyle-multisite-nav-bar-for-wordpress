@@ -1,4 +1,4 @@
-﻿=== WindStyle MultiSite Nav Bar ===
+=== WindStyle MultiSite Nav Bar ===
 Contributors: xiaoshatian
 Donate link: 
 Tags: MultiSite, Navigation, bar
@@ -37,18 +37,24 @@ MultiSite Nav Bar需要在每个博客单独激活并配置，激活之后，它
 == Screenshots ==
 
 1. Option page. 配置界面。
-
+                   
 == Changelog ==
 
-= 1.3.0 =
-* This version has a lot of changes. If you upgrade to this version, you need to re-configure plugin.
-* 此版本变动较大，升级至此版本需要重新配置插件。
-* Add global option page under 'Super Admin' page.
-* 增加全局配置，位于“超级管理”栏目下。
-* Move site logo url option to global option.
-* 将当前站点Logo配置移入全局配置中。
+= 1.4.0 =
+* Support display links in specified category of main blog. You can configure link category in golbal option page;
+* 支持显示主博客指定链接分类下的所有链接，可以在全局选项页面配置链接分类；
 * Code optimization.
-* 优化代码
+* 优化代码。
+
+= 1.3.0 =
+* This version has a lot of changes. If you upgrade to this version, you need to re-configure plugin;
+* 此版本变动较大，升级至此版本需要重新配置插件；
+* Add global option page under 'Super Admin' page;
+* 增加全局配置，位于“超级管理”栏目下；
+* Move site logo url option to global option;
+* 将当前站点Logo配置移入全局配置中；
+* Code optimization.
+* 优化代码。
 
 = 1.2.0 =
 * Support multiple language, default includes English and Simplified Chinese.
