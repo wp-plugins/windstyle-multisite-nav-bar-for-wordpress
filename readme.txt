@@ -1,4 +1,4 @@
-=== WindStyle MultiSite Nav Bar ===
+﻿=== WindStyle MultiSite Nav Bar ===
 Contributors: xiaoshatian
 Donate link: 
 Tags: MultiSite, Navigation, bar
@@ -41,7 +41,7 @@ MultiSite Nav Bar需要在每个博客单独激活并配置，激活之后，它
 == Changelog ==
 
 = 1.4.0 =
-* Support display links in specified category of main blog. You can configure link category in golbal option page;
+* Support display links in specified category of main blog. You can configure link category in global option page;
 * 支持显示主博客指定链接分类下的所有链接，可以在全局选项页面配置链接分类；
 * Code optimization.
 * 优化代码。
