@@ -3,7 +3,7 @@ Contributors: xiaoshatian
 Donate link: 
 Tags: MultiSite, Navigation, bar
 Requires at least: 3.0.0
-Tested up to: 3.0.1
+Tested up to: 3.0.5
 Stable tag: trunk,
 
 MultiSite navigation bar for Wordpress 3.0+. 针对Wordpress 3.0+的多站点导航栏插件。
