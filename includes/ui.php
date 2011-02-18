@@ -2,49 +2,56 @@
 
 add_action( 'wp_head' , 'WS_WriteCSS' );
 add_action( 'wp_head' , 'WS_WriteJS' );
-add_action( 'wp_head' , 'WS_RenderBar' );
+add_action( 'wp_footer' , 'WS_RenderBar' );
 
 function WS_RenderBar( ) {
-	echo '<div id="WS_TNB"><div>';
-	WS_WriteSiteInfo( );
-	echo '<ul>';
-	WS_WriteBlogs( );
-	$bookmark = WS_GetBookmarks( );
-	echo $bookmark[ 'menu_link' ];
-  	echo '</ul></div><div id="WS_TNB_SUBMENUS">';
-	echo $bookmark[ 'menu_content' ];
-	echo '</div></div>';
+		$bookmark = WS_GetBookmarks( );
+	echo '<script type="text/javascript">';
+	echo 'var ws_tnb = document.createElement("div");';
+	echo 'ws_tnb.id = "WS_TNB";';
+	echo 'ws_tnb.innerHTML = \'<div>' 
+		. WS_GetSiteInfo( )
+		.  '<ul>'
+		.  WS_GetBlogs( )
+		.  $bookmark[ 'menu_link' ]
+		. '</ul></div><div id="WS_TNB_SUBMENUS">'
+		. $bookmark[ 'menu_content' ]
+		. '</div>\';';
+	echo 'document.body.insertBefore(ws_tnb, document.body.firstChild);';
+	echo '</script>';
 }
 
-function WS_WriteSiteInfo( ){
+function WS_GetSiteInfo( ){
 	global $site_option;
 	$current_site = get_current_site( );
 	$logo = $site_option[ 'logo_url' ];
-	echo '<h1><a href="http://' 
+	$result = '<h1><a href="http://' 
 		. $current_site -> domain . 
 		'" title="' 
 		. $current_site -> site_name 
 		. '">';
 	if( isset( $logo ) ) {
-		echo '<img src="' 
+		$result .= '<img src="' 
 			. $logo 
 			. '" alt="' 
 			. $current_site -> site_name 
 			. '"/>';
 	} else {
-		echo  $current_site -> site_name;
+		$result .= $current_site -> site_name;
 	}
-	echo '</a>';
-	echo '</h1>';
+	$result .= '</a>';
+	$result .= '</h1>';
+	return $result;
 }
 
-function WS_WriteBlogs( ) {
+function WS_GetBlogs( ) {
+	$result = '';
 	$blog_list = get_blog_list( 0, 'all' );
 	foreach( $blog_list AS $blog ) {
 		if( $blog[ 'blog_id' ] == 1 )
 			continue;
 		$blog = get_blog_details( $blog[ 'blog_id' ] );
- 		echo '<li><a href="' 
+ 		$result .= '<li><a href="' 
 			. $blog -> siteurl 
 			. '" title="' 
 			. $blog -> blogname 
@@ -52,6 +59,7 @@ function WS_WriteBlogs( ) {
 			. $blog -> blogname 
 			. '</a></li>';
 	}
+	return $result;
 }
 
 function WS_GetBookmarks( ) {
