@@ -1,7 +1,7 @@
 ﻿=== WindStyle MultiSite Nav Bar ===
 Contributors: xiaoshatian
 Donate link: 
-Tags: MultiSite, Navigation, bar
+Tags: MultiSite, Navigation, bar, Admin Bar
 Requires at least: 3.2.0
 Tested up to: 3.2.0
 Stable tag: trunk,
