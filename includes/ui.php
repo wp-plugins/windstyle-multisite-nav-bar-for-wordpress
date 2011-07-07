@@ -59,7 +59,7 @@ function WS_AddSiteInfo( ){
 function WS_AddBlogs( ) {
 	global $wp_admin_bar;
 	$blog_list = get_blog_list( 0, 'all' );
-	foreach( $blog_list AS $blog ) {echo $blog[ 'blog_id' ];
+	foreach( $blog_list AS $blog ) {
 		if( $blog[ 'blog_id' ] == 1 )
 			continue;
 		$blog = get_blog_details( $blog[ 'blog_id' ] );
