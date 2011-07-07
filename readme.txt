@@ -2,8 +2,8 @@
 Contributors: xiaoshatian
 Donate link: 
 Tags: MultiSite, Navigation, bar
-Requires at least: 3.0.0
-Tested up to: 3.0.5
+Requires at least: 3.2.0
+Tested up to: 3.2.0
 Stable tag: trunk,
 
 MultiSite navigation bar for Wordpress 3.0+. 针对Wordpress 3.0+的多站点导航栏插件。
@@ -12,13 +12,11 @@ MultiSite navigation bar for Wordpress 3.0+. 针对Wordpress 3.0+的多站点导
 
 Wordpress 3.0+ integrates Multi-Site feature of Wordpress MU. We can easily create a lot of blogs, with only one deployment of Wordpress. 
 
-WindStyle MultiSite Nav Bar can show a navigation bar on every blog of your Wordpress site. All of blogs will show in this navigation bar. You can customize site logo and every blog can customize theme of their navigation bar( If you like, you can design your own theme.)
+WindStyle MultiSite Nav Bar can show a navigation bar on every blog of your Wordpress site. All of blogs will show in this navigation bar. And you can customize site logo.
 
 WordPress从3.0版本开始兼并了Wordpress MU的多站点功能（MultiSite），凭借此功能，只需要部署一次Wordpress，就可以方便地创建出许多博客站点。当你在维护多个博客的时候，可能并不希望让这些博客看起来各自独立，如果你希望能通过类似导航栏的方式把多个博客连接起来，但又不想要使用臃肿的BuddyPress插件，那就尝试一下MultiSite Nav Bar吧。
 
 MultiSite Nav Bar需要在每个博客单独激活并配置，激活之后，它会在博客中添加一个导航栏，用以显示当前Wordpress站点的名称、Logo以及所有博客的链接。
-
-并且你可以在控制台选择MultiSite Nav Bar的显示样式，MultiSite Nav Bar内置了两种样式，如果不合心意，也可以自行为MultiSite Nav Bar编写主题。
 
 
 
@@ -37,10 +35,14 @@ MultiSite Nav Bar需要在每个博客单独激活并配置，激活之后，它
 == Screenshots ==
 
 1. Top Site Option page. 配置界面。
-
-2. Blog Option page. 配置界面。
                    
 == Changelog ==
+
+= 2.0.0 =
+* Using Wordpress built-in Admin Bar to render navigation content.
+* 使用Wordpress内置的管理员工具栏来呈现导航内容。
+* Remove theme feature, using default theme of Wordpress Admin Bar.
+* 去除主题功能，使用Wordpress管理员工具栏默认主题。
 
 = 1.5.0 =
 * Using JavaScript to render navigation bar to avoid conflicts with other plugins.
