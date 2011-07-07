@@ -34,7 +34,9 @@ MultiSite Nav Bar需要在每个博客单独激活并配置，激活之后，它
 
 == Screenshots ==
 
-1. Top Site Option page. 配置界面。
+1. Preview. 预览。
+
+2. Top Site Option page. 配置界面。
                    
 == Changelog ==
 
