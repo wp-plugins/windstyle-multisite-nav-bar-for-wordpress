@@ -23,14 +23,18 @@ MultiSite Nav Bar需要在每个博客单独激活并配置，激活之后，它
 == Installation ==
 
 1. Upload plugin files( WindStyle-MultiSite-Nav-Bar.php and related directories) to '/wp-content/plugins/' directory.
-2. Activate WindStyle MultiSite Nav Bar from 'Plugin' page( every blog need do this).
-3. Configure plugin at 'MultiSite Nav Bar' page under 'General' and 'Super Admin' page.
-4. Enjoy!
+2. Login as Network Admin.
+3. Click 'Howdy, Your name' in the right top corner, then select 'Network Admin'.
+4. Activate WindStyle MultiSite Nav Bar from 'Plugins' page( every blog need do this).
+5. Configure plugin at 'MultiSite Nav Bar' page under 'Settings'.
+6. Enjoy!
 
 1. 将插件（WindStyle-MultiSite-Nav-Bar.php及相关文件、文件夹）上传到“/wp-content/plugins/”目录；
-2. 在“插件”栏目中激活WindStyle MultiSite Nav Bar（每个博客都需要单独配置）。
-3. 在“多站点导航栏”栏目中配置插件。
-4. Enjoy！
+2. 以顶级管理员身份登录；
+3. 点击右上角的“您好，用户”菜单，然后选择“管理站点”；
+4. 在“插件”栏目中激活WindStyle MultiSite Nav Bar。
+5. 在“设置”下方的“多站点导航栏”栏目中配置插件。
+6. Enjoy！
 
 == Screenshots ==
 
@@ -39,6 +43,12 @@ MultiSite Nav Bar需要在每个博客单独激活并配置，激活之后，它
 2. Top Site Option page. 配置界面。
                    
 == Changelog ==
+
+= 2.1.0 =
+* Upgraded to global plugin, please activate it in Network Admin Dashboard, sub-sites don't need to activate this plugin.
+* 插件升级为网络全局插件，请顶级管理员在“管理网络”控制板的“插件”栏目中启用插件，子站点无需单独启用。
+* Option page was moved to Settings in Network Admin Dashboard.
+* 更改选项入口，新的入口在“管理网络”的“设置”中。
 
 = 2.0.0 =
 * Using Wordpress built-in Admin Bar to render navigation content.
