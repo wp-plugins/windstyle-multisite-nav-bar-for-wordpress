@@ -16,7 +16,7 @@ WindStyle MultiSite Nav Bar can show a navigation bar on every blog of your Word
 
 WordPress从3.0版本开始兼并了Wordpress MU的多站点功能（MultiSite），凭借此功能，只需要部署一次Wordpress，就可以方便地创建出许多博客站点。当你在维护多个博客的时候，可能并不希望让这些博客看起来各自独立，如果你希望能通过类似导航栏的方式把多个博客连接起来，但又不想要使用臃肿的BuddyPress插件，那就尝试一下MultiSite Nav Bar吧。
 
-MultiSite Nav Bar需要在每个博客单独激活并配置，激活之后，它会在博客中添加一个导航栏，用以显示当前Wordpress站点的名称、Logo以及所有博客的链接。
+MultiSite Nav Bar只需要在顶级网站中激活并配置，激活之后，它会在博客中添加一个导航栏，用以显示当前Wordpress站点的名称、Logo以及所有博客的链接。
 
 
 
